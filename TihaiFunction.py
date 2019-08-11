@@ -19,6 +19,9 @@ def tihaiMath(startBeat, taalName, pallaMult = 0.5, gapMult = 0.25, pallaGgap = 
                 "Dhamaar": 14,
                 "Teentaal": 16,
                 }
+    if taalName not in taalDict.keys():
+        return ("Taal not in existing dictionary, please update dictionary")
+    
     cycleBeats = taalDict[taalName]
     tihaiTotalBeats = (cycleBeats-startBeat)+1
     maxPalla = maxPallaCalc(tihaiTotalBeats)
