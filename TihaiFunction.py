@@ -2,10 +2,12 @@ import numpy as np
 import math
 
 
-#currently assumes that it is in teentaal
+#startBeat is the beat where the user wants the tihai to start
+#taalName is the name of the taal
+    #if the user enters a name not in the dictionary, it prints taal not in dictionary, pls add it
 #half beat palla means that the palla needs to oeither be a whole number of beats or whole number + 0.5 beats long
+#pallaMult and gapMult set user constraints for pallas and gaps
 #pallaGgap means palla needs to be greater than the gap
-#assuming that pallas are multiples of 0.5, and gaps are multiples of 0.25
 
 
 def tihaiMath(startBeat, taalName, pallaMult = 0.5, gapMult = 0.25, pallaGgap = True ):
